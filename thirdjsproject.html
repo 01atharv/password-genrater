@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password genrator</title>
+    
+    <link href="thirdjsproject.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1> Password Genrator </h1>
+        <div class="display-container">
+            <input readonly  placeholder="Password" class="display" data-passwordDisplay>
+            <button class="copt-btn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.5hsxuKzTYXALRkIaM8HnBAHaJV&pid=Api&P=0&h=180" alt="copy"
+                    width="23" height="23">
+            </buttonclass=data-copy>
+        </div>
+
+        <div class="input-container">
+            <div class="lenght-container">
+                <p>
+                    Password Length
+                </p>
+                <p data-lengthNumber>0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+            <div class="check ">
+                <input type="checkbox" id="uppercase" >
+                <label for="uppercase">Include Uppercase letter</label>
+            </div>
+            <div class="check">
+
+
+                <input type="checkbox" id="lowercase" >
+                <label for="lowercase">Include Lowercase letter</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="Numberr" >
+                <label for="Numberr">Include Number</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="symbols" >
+                <label for="symbols">Include Symbols</label>
+            </div>
+
+
+            <div class="strenght-container">
+
+                <p>Strenght</p>
+                <div  class="indicator" data-indicator></div>
+            </div>
+            
+            <button class="generateButton">Genrate Password</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="thirdjsproject.js"></script>
+</html>
